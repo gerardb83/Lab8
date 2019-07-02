@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Lab8Main {
 	static Scanner scan = new Scanner(System.in);
-
+	
 	public static void main(String[] args) {
 
 		String[] students = { "Kelsey", "Clark", "Maurice", "Hilberto", "Todd", "Gunther", "Ignatius", "Larry",
@@ -14,11 +14,9 @@ public class Lab8Main {
 				"corn chips", "jumbalya", "ancient cheese" };
 		String knowMore = "";
 		String anotherStudent = "";
-
 		System.out.println("Welcome to our Java class.");
 
 		do {
-
 			int userChoice = getStudent(students);
 			String moreInfo = studentInfo(students, userChoice);
 			if (moreInfo.equalsIgnoreCase("hometown")) {
