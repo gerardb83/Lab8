@@ -45,7 +45,7 @@ public class Lab8Main {
 				i = input - 1;
 				System.out.println("Student " + (i + 1) + " is " + students[i] + ". What would you like to know about "
 						+ students[i] + "? (enter 'hometown' or 'favorite food'): ");
-			} catch (Exception e) {
+			} catch (IndexOutOfBoundsException | IllegalArgumentException | InputMismatchException e) {
 				System.out.println("That student does not exist. Please enter a number 1 - 10");
 				scan.nextLine();
 			}
